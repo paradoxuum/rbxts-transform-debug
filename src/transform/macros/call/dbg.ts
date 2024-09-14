@@ -152,7 +152,6 @@ export function transformToIIFEDebugPrint(
 					[
 						factory.createParameterDeclaration(
 							undefined,
-							undefined,
 							isLuaTupleType ? factory.createToken(ts.SyntaxKind.DotDotDotToken) : undefined,
 							valueId,
 							undefined,
@@ -175,7 +174,7 @@ export function transformToIIFEDebugPrint(
 					factory.createArrowFunction(
 						undefined,
 						undefined,
-						[factory.createParameterDeclaration(undefined, undefined, undefined, id)],
+						[factory.createParameterDeclaration(undefined, undefined, id)],
 						undefined,
 						undefined,
 						factory.createBlock([
@@ -221,7 +220,6 @@ export function transformToIIFEDebugPrint(
 				undefined,
 				[
 					factory.createParameterDeclaration(
-						undefined,
 						undefined,
 						undefined,
 						id,
